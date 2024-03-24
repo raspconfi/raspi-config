@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <h1>LED Control</h1>
+    {% if led_state == 'on' %}
+        <a href="/led/off" class="btn btn-danger">Turn Off</a>
+    {% else %}
+        <a href="/led/on" class="btn btn-success">Turn On</a>
+    {% endif %}
+  </body>
+</html>
